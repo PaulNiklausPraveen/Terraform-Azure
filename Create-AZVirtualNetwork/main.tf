@@ -16,12 +16,12 @@ resource "azurerm_virtual_network" "network1" {
   ]
 
   subnet {
-    name           = "subnetA"
+    name           = "var.subnetAname"
     address_prefix = var.subnetA
   }
 
   subnet {
-    name           = "subnetB"
+    name           = "var.subnetBname"
     address_prefix = var.subnetB
   }
 }
